@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sagrado e os Espaços - Apresentação em Tópicos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F4; /* stone-100 */
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .card-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card.active .card-content {
+            max-height: 500px;
+        }
+        .card.active .arrow {
+            transform: rotate(180deg);
+        }
+        .arrow {
+            transition: transform 0.3s ease-in-out;
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .presenter-badge {
+            background-color: #A37F3F; /* amber-700 */
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem; /* rounded-md */
+            font-size: 0.875rem; /* text-sm */
+            display: inline-block;
+            margin-bottom: 0.75rem; /* mb-3 */
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <header class="bg-stone-100/90 backdrop-blur-md sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-xs sm:text-sm md:text-base">
+                <li><a href="#roteiro" class="hover:text-amber-700 transition-colors duration-300">Roteiro</a></li>
+                <li><a href="#intro" class="hover:text-amber-700 transition-colors duration-300">Introdução</a></li>
+                <li><a href="#caracteristicas" class="hover:text-amber-700 transition-colors duration-300">Características</a></li>
+                <li><a href="#ritual" class="hover:text-amber-700 transition-colors duration-300">Ritual</a></li>
+                <li><a href="#conclave" class="hover:text-amber-700 transition-colors duration-300">Conclave</a></li>
+                <li><a href="#reflexao" class="hover:text-amber-700 transition-colors duration-300">Reflexão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16">
+
+        <section id="hero" class="text-center mb-16 md:mb-24 fade-in-section">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 mb-4">O Sagrado e o Espaço</h1>
+            <p class="text-md sm:text-lg md:text-xl text-stone-600 max-w-3xl mx-auto mb-6">Apresentação em tópicos sobre a conexão transcendental entre fé e lugar.</p>
+            <img src="SaoPedro.avif" alt="Imagem conceitual representando o sagrado e o espaço" class="w-full max-w-4xl mx-auto rounded-lg shadow-xl object-cover h-48 sm:h-64 md:h-80">
+        </section>
+
+        <section id="roteiro" class="mb-16 md:mb-24 scroll-mt-20 fade-in-section bg-white p-6 sm:p-8 rounded-lg shadow-lg border border-stone-200">
+            <h2 class="text-3xl text-center font-semibold mb-8 text-amber-800">Apresentadores e Roteiro</h2>
+            <ul class="space-y-4 max-w-2xl mx-auto text-stone-700">
+                <li class="p-4 rounded-md bg-stone-50 border border-stone-200">
+                    <strong class="text-amber-700 block text-lg">Marcelo Eduardo C. N. Lins:</strong>
+                    <span class="text-sm block">Abertura & Introdução (A Essência do Sagrado)</span>
+                </li>
+                <li class="p-4 rounded-md bg-stone-50 border border-stone-200">
+                    <strong class="text-amber-700 block text-lg">Miguel Wihby:</strong>
+                    <span class="text-sm block">Características (Anatomia de um Espaço Sagrado)</span>
+                </li>
+                <li class="p-4 rounded-md bg-stone-50 border border-stone-200">
+                    <strong class="text-amber-700 block text-lg">Carlos Eduardo Jeronimo:</strong>
+                    <span class="text-sm block">O Ritual & O Conclave (Parte 1: Capela Sistina, "Extra Omnes")</span>
+                </li>
+                <li class="p-4 rounded-md bg-stone-50 border border-stone-200">
+                    <strong class="text-amber-700 block text-lg">Guilherme Santos:</strong>
+                    <span class="text-sm block">O Conclave (Parte 2: A Fumaça) & Reflexão Final</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="intro" class="mb-16 md:mb-24 scroll-mt-20 fade-in-section">
+            <div class="presenter-badge">Marcelo Eduardo C. N. Lins</div>
+            <h2 class="text-3xl text-center font-semibold mb-8">A Essência do Sagrado</h2>
+            <p class="text-center text-stone-600 mb-10 max-w-3xl mx-auto text-sm sm:text-base">O que define o sagrado e como ele se conecta aos lugares?</p>
+            <div class="grid md:grid-cols-2 gap-6 mt-8 max-w-4xl mx-auto items-stretch">
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-stone-200 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Tópicos: O que é Sagrado?</h3>
+                        <ul class="list-disc list-inside space-y-1 text-stone-600 text-sm sm:text-base">
+                            <li>Qualidade: santo, divino, venerável.</li>
+                            <li>Distinção: separado do profano/comum.</li>
+                            <li>Universalidade: presente em diversas culturas.</li>
+                            <li>Vínculo Espacial: manifesta-se em locais específicos.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="ImagemSagrado.webp" alt="Imagem representando a universalidade do sagrado" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="mb-16 md:mb-24 scroll-mt-20 fade-in-section">
+            <div class="presenter-badge">Miguel Wihby</div>
+            <h2 class="text-3xl text-center font-semibold mb-8">Anatomia de um Espaço Sagrado</h2>
+            <p class="text-center text-stone-600 mb-10 max-w-3xl mx-auto text-sm sm:text-base">Elementos que transformam um lugar comum em centro espiritual.</p>
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="card bg-white rounded-lg shadow-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-4 sm:p-6 flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-semibold">Tópico: Delimitação</h3>
+                        <span class="arrow text-xl text-amber-700 transform transition-transform duration-300">↓</span>
+                    </div>
+                    <div class="card-content px-4 sm:px-6 pb-4 sm:pb-6 text-stone-600 text-sm sm:text-base">
+                        <img src="fronteira.webp" alt="Delimitação" class="w-full rounded mb-3 h-auto object-cover">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Fronteiras claras (muros, portais, natureza).</li>
+                            <li>Separação físico-simbólica: sagrado vs. profano.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-4 sm:p-6 flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-semibold">Tópico: Orientação</h3>
+                        <span class="arrow text-xl text-amber-700 transform transition-transform duration-300">↓</span>
+                    </div>
+                    <div class="card-content px-4 sm:px-6 pb-4 sm:pb-6 text-stone-600 text-sm sm:text-base">
+                        <img src="CapturaTela.png" alt="Orientação" class="w-full rounded mb-3 h-auto object-cover">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Direcionamento simbólico (nascer do sol, cidades sagradas).</li>
+                            <li>Conexão cósmica ou com ponto de referência divino.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-4 sm:p-6 flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-semibold">Tópico: Simbolismo</h3>
+                        <span class="arrow text-xl text-amber-700 transform transition-transform duration-300">↓</span>
+                    </div>
+                    <div class="card-content px-4 sm:px-6 pb-4 sm:pb-6 text-stone-600 text-sm sm:text-base">
+                         <img src="Captura2.png" alt="Simbolismo" class="w-full rounded mb-3 h-auto object-cover">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Elementos que evocam o divino (arquitetura, arte, luz).</li>
+                            <li>Pontes para a experiência transcendental.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ritual" class="mb-16 md:mb-24 scroll-mt-20 fade-in-section">
+            <div class="presenter-badge">Carlos Eduardo Jeronimo</div>
+            <h2 class="text-3xl text-center font-semibold mb-8">A Transformação pelo Ritual</h2>
+            <p class="text-center text-stone-600 mb-10 max-w-3xl mx-auto text-sm sm:text-base">Como um espaço se torna sagrado? A alquimia do ritual e da fé.</p>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <div>
+                    <img src="Ato.png" alt="Imagem de um ritual de consagração" class="w-full rounded-lg shadow-xl h-auto object-cover">
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 md:gap-4 text-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-stone-200 w-56 sm:w-60 hover:scale-105 transition-transform duration-300">
+                        <h4 class="text-lg font-semibold">Profano</h4>
+                        <p class="text-xs text-stone-500">Comum, cotidiano</p>
+                    </div>
+                    <div class="text-3xl text-amber-700 font-serif">&darr;</div>
+                    <div class="bg-amber-100 p-4 rounded-lg shadow-md border border-amber-300 w-56 sm:w-60 hover:scale-105 transition-transform duration-300">
+                        <h4 class="text-lg font-semibold">Ação Ritualística</h4>
+                        <p class="text-xs text-stone-500">Consagração, Fé, Evento</p>
+                    </div>
+                    <div class="text-3xl text-amber-700 font-serif">&darr;</div>
+                     <div class="bg-white p-4 rounded-lg shadow-md border border-stone-200 w-56 sm:w-60 hover:scale-105 transition-transform duration-300">
+                        <h4 class="text-lg font-semibold">Sagrado</h4>
+                        <p class="text-xs text-stone-500">Transcendente, divino</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclave" class="scroll-mt-20 bg-amber-800/10 p-6 sm:p-8 md:p-12 rounded-lg mb-16 md:mb-24 fade-in-section">
+            <h2 class="text-3xl text-center font-semibold mb-8 text-amber-900">Estudo de Caso: O Conclave</h2>
+            <p class="text-center text-stone-600 mb-10 max-w-3xl mx-auto text-sm sm:text-base">A Capela Sistina como epicentro ritualístico na escolha papal.</p>
+             <img src="Capela.webp" alt="Ilustração da Capela Sistina" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg my-6 h-auto object-cover">
+
+            <div class="mb-10">
+                <div class="presenter-badge">Carlos Eduardo Jeronimo</div>
+                <h3 class="text-2xl font-semibold text-amber-800 mb-4 text-center sm:text-left">Parte 1: O Espaço Transformado</h3>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white/80 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <h4 class="text-lg font-semibold mb-1 text-amber-800">Tópico: A Capela Sistina</h4>
+                        <ul class="list-disc list-inside space-y-1 text-stone-600 text-xs sm:text-sm">
+                            <li>Local de votação e expectativa divina.</li>
+                            <li>História, arte e testemunho do sagrado.</li>
+                        </ul>
+                    </div>
+                     <div class="bg-white/80 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <h4 class="text-lg font-semibold mb-1 text-amber-800">Tópico: "Extra Omnes"</h4>
+                        <ul class="list-disc list-inside space-y-1 text-stone-600 text-xs sm:text-sm">
+                            <li>"Fora todos!": Isolamento físico.</li>
+                            <li>Sacralização do ambiente para propósito divino.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="presenter-badge">Guilherme Santos</div>
+                <h3 class="text-2xl font-semibold text-amber-800 mb-4 text-center sm:text-left">Parte 2: O Sinal Divino</h3>
+                <div class="bg-white/80 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 max-w-md mx-auto sm:max-w-none">
+                    <h4 class="text-lg font-semibold mb-1 text-amber-800">Tópico: A Fumaça</h4>
+                    <ul class="list-disc list-inside space-y-1 text-stone-600 text-xs sm:text-sm">
+                        <li>Sinal que transcende muros (branca/preta).</li>
+                        <li>Comunicação da decisão sagrada ao mundo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflexao" class="text-center scroll-mt-20 fade-in-section">
+            <div class="presenter-badge">Guilherme Santos</div>
+            <h2 class="text-3xl font-semibold mb-8">Função e Reflexão Final</h2>
+            <p class="text-center text-stone-600 mb-10 max-w-3xl mx-auto text-sm sm:text-base">O propósito dos espaços sagrados e sua relevância em nossas vidas.</p>
+            <div class="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                     <img src="Meditacao.avif" alt="Espaço pessoal de reflexão" class="w-full h-auto object-cover">
+                </div>
+                <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-xl border border-stone-200">
+                     <h3 class="text-xl font-semibold mb-3 text-amber-800">Tópicos: O Sagrado no Pessoal</h3>
+                     <ul class="list-disc list-inside space-y-1 text-stone-600 mb-4 text-left text-sm sm:text-base">
+                        <li>Necessidade humana de transcendência.</li>
+                        <li>Criação de espaços sagrados pessoais (altares, natureza).</li>
+                        <li>Busca por conexão e paz.</li>
+                     </ul>
+                     <blockquote class="border-l-4 border-amber-600 pl-4 py-1 italic text-stone-700 text-md sm:text-lg">
+                        Como reconhecemos e criamos o sagrado em nossos espaços?
+                     </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 mt-12 bg-stone-200 text-stone-600 text-xs sm:text-sm">
+        <p>Apresentação em tópicos: "O Sagrado e os Espaços".</p>
+        <p>ELIADE, Mircea. O sagrado e o profano: a essência das religiões.</p>
+        <p>OTTO, Rudolf. O sagrado.</p>
+        <p>BACHELARD, Gaston. A poética do espaço.</p>
+        <p>&copy; <span id="currentYear"></span> Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const header = card.querySelector('.cursor-pointer');
+                header.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
+
+            const navLinks = document.querySelectorAll('header nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 70; 
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            const sections = document.querySelectorAll('.fade-in-section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
